@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- employees23:21-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <title>Document Lab</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/search.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
+    <!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="header">
+            <div class="header-left">
+                <a href="index.html" class="logo">
+
+                </a>
+            </div>
+            <a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+            <a id="mobile_btn" class="mobile_btn float-left" href="#sidebar"><i class="fa fa-bars"></i></a>
+
+            <div class="dropdown mobile-user-menu float-right">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i
+                        class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="settings.html">Settings</a>
+                    <a class="dropdown-item" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="menu-title">Main</li>
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard"></i> <span>Section 1</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dashboard"></i> <span>Section 2</span></a>
+                        </li>
+
+
+
+
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrapper">
+            <div class="content">
+                <div class="row">
+                    <div class="col-sm-4 col-3">
+                        <h4 class="page-title">Question & Answer Review</h4>
+                    </div>
+
+                </div>
+                <div class="row filter-row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="form-group">
+                            <textarea id="questionBox" rows="6" cols="5" class="form-control" placeholder="Ask a question"></textarea>
+                            <div id="suggestions" style="background: #fff; cursor: pointer; position: relative; max-height: 200px; overflow-y: auto; display: none;">
+                                <!-- Suggestions will be populated here -->
+                                <span id="closeSuggestions" style="position: absolute; bottom: 10px; right: 10px; cursor: pointer; padding: 5px; background-color: red; color: white; border-radius: 50%;">&times;</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-5">
+                        <div class="form-group">
+                            <textarea id="answerBox" rows="6" class="form-control" placeholder="Answer"
+                                style="width: 100%;"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+    <a href="#" id="loadContextBtn" class="btn btn-primary btn-block">Load Context</a>
+</div>
+                </div>
+                <div class="row filter-row">
+                    <div class="col-sm-6 col-md-3">
+
+                        <div class="form-group form-focus select-focus">
+                            <label class="focus-label">Select</label>
+                            <select class="select floating">
+                                <option>TG1</option>
+                                <option>TG2</option>
+                                <option>TG3</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+
+                        <div class="form-group form-focus" style="border: 0.4px solid gray;">
+                            <label class="focus-label">Search by phrase or keyword</label>
+                            <input type="text" class="form-control floating">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-8 col-xl-6">
+                        <div class="card member-panel">
+
+                            <div class="card-body">
+                                <ul class="paragraph-list">
+                                    <li>
+                                        <div class="contact-cont">
+                                            <input type="checkbox" class="mr-10">
+                                            <span>Doc 1: 45</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contact-cont">
+                                            <input type="checkbox" class="mr-10">
+                                            <span>Doc 2: 75,86</span>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div class="card-footer text-center bg-white">
+                                <a href="doctors.html">Expand view</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="text-right" style="margin-top: 90px;">
+                            <a href="appointments.html" class="btn btn-outline-primary take-btn">Add</a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="card member-panel">
+
+                            <div class="card-body">
+                                <ul class="contact-list" id="contextList">
+                                    <!-- Contexts will be loaded here -->
+                                </ul>
+                            </div>
+                            <div class="card-footer text-center bg-white">
+                                <a href="doctors.html">Expand view</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-0">
+                        <div class="m-t-11 text-center">
+                            <button class="btn btn-primary submit-btn">Generate new answer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    <div class="sidebar-overlay" data-reff=""></div>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="lib/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Attach click event listener to the close button
+            document.getElementById('closeSuggestions').addEventListener('click', function () {
+                // Hide the suggestions container
+                document.getElementById('suggestions').style.display = 'none';
+            });
+        });
+        </script>
+   
+</body>
+
+
+<!-- employees23:22-->
+
+</html>

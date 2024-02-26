@@ -1,0 +1,273 @@
+/* Base Styles */
+.my-content {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f4f7fa;
+    padding: 20px;
+}
+
+.my-page-title {
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+/* Form & Input Styles */
+.my-form-group {
+    margin-bottom: 15px;
+}
+
+.my-form-control, .my-select {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px; /* Added for spacing */
+}
+
+.my-select-focus .my-focus-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+/* Buttons */
+.my-btn {
+    color: #fff;
+    background-color: rgb(24, 74, 110);
+    border-color: #007bff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block; /* For link-styled buttons */
+}
+
+.my-btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004095;
+}
+
+.my-btn-outline-primary {
+    color: #007bff;
+    background-color: transparent;
+    border-color: #007bff;
+}
+
+.my-btn-outline-primary:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+/* Load Buttons */
+.my-load-btn {
+    color: #fff;
+    background-color: rgb(24, 74, 110);
+    border-color: #007bff;
+    padding: 60px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+   
+}
+
+.my-load-btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004095;
+}
+
+.my-load-btn-outline-primary {
+    color: #007bff;
+    background-color: transparent;
+    border-color: #007bff;
+}
+
+.my-load-btn-outline-primary:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Card Styles */
+.my-card {
+    background: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.my-col-medium {
+    width: 300px; /* Adjust based on your preference for a 'medium' size */
+    margin: 10 auto; /* Centers the column if it's not in a flex/grid layout, adjust margin as needed */
+  }
+  
+  .my-context-card {
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Optional: adds rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow */
+    overflow: hidden; /* Ensures the content fits within the border-radius */
+  }
+  
+  .my-card .text-center {
+    text-align: center; /* Centers the text */
+    padding: 10px; /* Adds padding around the text */
+    border-bottom: 1px solid #eee; /* Adds a subtle separator */
+  }
+  
+  .my-context-card-body {
+    padding: 15px; /* Adds padding inside the card body for spacing */
+  }
+  
+  .my-context-list {
+    list-style-type: none; /* Removes bullet points from the list */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+  }
+  
+  .my-context-list li {
+    padding: 8px 0; /* Adds vertical padding for list items */
+    border-bottom: 1px solid #eee; /* Optional: adds a separator between items */
+  }
+  
+  .my-context-list li:last-child {
+    border-bottom: none; /* Removes the bottom border from the last item */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .my-col-medium {
+      width: 100%; /* Full width on smaller screens */
+      margin: 10px 0; /* Adjusted margin for spacing between columns on small screens */
+    }
+  }
+  
+.my-card-footer {
+    padding: 20px;
+}
+.my-card-body {
+    height: 300px; /* Adjust the height as needed */
+    overflow-y: auto; /* Enables vertical scrolling */
+  }
+.my-card-footer {
+    border-top: 1px solid #ced4da;
+}
+
+/* List Styles */
+.my-paragraph-list {
+    list-style: none;
+    padding: 15px;
+}
+
+.my-paragraph-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.my-paragraph-list li:last-child {
+    border-bottom: none;
+}
+/* List Styles */
+/* Ensure the list has no bullets and has padding */
+.my-context-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style for list items for better visibility and spacing */
+.my-context-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This ensures content and checkbox are spaced apart */
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Visual separation between items */
+}
+
+/* Custom styling for the checkbox */
+input[type='checkbox'].mr-10 {
+    /* Hide the native checkbox appearance */
+    -webkit-appearance: none; /* Chrome, Safari, Opera */
+    -moz-appearance: none; /* Firefox */
+    appearance: none;
+
+    /* Custom checkbox appearance */
+    width: 20px; /* Custom width */
+    height: 20px; /* Custom height */
+    background-color: white; /* Background color */
+    border: 2px solid #555; /* Border */
+    position: relative; /* For positioning the "X" */
+    display: inline-block; /* To display it inline */
+   
+}
+
+input[type='checkbox'].mr-10:checked:after,
+input[type='checkbox'].mr-10:after {
+    content: '✖'; /* Using an 'X' or similar character */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #555; /* "X" color */
+    font-size: 16px; /* Adjust as needed */
+}
+
+/* Since we want the "X" to always appear, you might not need the :checked pseudo-class */
+
+/* Unfortunately, without changing the HTML structure to include a label or span after the checkbox,
+   we cannot use CSS to add an "X" directly. CSS doesn't support adding content to input elements directly. */
+
+
+/* Suggestions and Close Button */
+.my-suggestions {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 10;
+    background-color: #fff;
+    display: none; /* Adjust as necessary */
+}
+
+.my-close-suggestions {
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #f00;
+    border-radius: 50%;
+    padding: 0 5px;
+}
+
+/* Text Alignment */
+.my-text-right {
+    text-align: right;
+}
+
+.my-text-center {
+    text-align: center;
+}
+.my-row.my-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px; /* Adjust the space between textareas */
+}
+
+.my-col-textarea {
+    flex: 1; /* Allows the textbox to grow */
+}
+
+.my-col-textarea-answer {
+    flex: 1.5; /* Makes the answer textbox slightly wider */
+}
+.my-col-textarea-new-answer {
+    flex: 1;
+}
+.selected {
+    background-color: #ffdddd; /* Light red background */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .my-col, .my-col-large, .my-col-small{}}
+    

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- employees23:21-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <title>Document Lab</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/search.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
+    <!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="header">
+            <div class="header-left">
+                <a href="index.html" class="logo">
+
+                </a>
+            </div>
+            <a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+            <a id="mobile_btn" class="mobile_btn float-left" href="#sidebar"><i class="fa fa-bars"></i></a>
+
+            <div class="dropdown mobile-user-menu float-right">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i
+                        class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="settings.html">Settings</a>
+                    <a class="dropdown-item" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="menu-title">Main</li>
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard"></i> <span>Section 1</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dashboard"></i> <span>Section 2</span></a>
+                        </li>
+
+
+
+
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrapper">
+            <div class="my-content">
+                <div class="my-row">
+                    <div class="my-col">
+                        <h4 class="my-page-title">Question & Answer Review</h4>
+                    </div>
+                </div>
+                <div class="my-row my-filter-row">
+                    <div class="my-col-textarea">
+                        <div class="my-form-group">
+                            <textarea id="questionBox" rows="6" class="my-form-control" placeholder="Ask a question"></textarea>
+                            <div id="suggestions" style="background: #fff; cursor: pointer; position: relative; max-height: 200px; overflow-y: auto; display: none;">
+                                <!-- Suggestions will be populated here -->
+                                <span id="closeSuggestions" style="position: absolute; bottom: 10px; right: 10px; cursor: pointer; padding: 5px; background-color: red; color: white; border-radius: 50%;">&times;</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="my-col-textarea my-col-textarea-answer">
+                        <div class="my-form-group">
+                            <textarea id="answerBox" rows="6" class="my-form-control" placeholder="Answer"></textarea>
+                        </div>
+                    </div>
+                    <div class="my-col">
+                        <a href="#" id="loadContextBtn" class="my-load-btn my-btn-primary">Load Context</a>
+                    </div>
+                </div>
+                <div class="my-row my-filter-row">
+                    <div class="my-col">
+            
+                        <div class="my-form-group my-select-focus">
+                            <label class="my-focus-label" style="visibility: hidden;">Select Document</label>
+                            <select id="documentSelect" class="my-select floating" style="color: rgb(24, 74, 110); font-weight: 700; font-size: 15px;">
+                                <option>Select Document</option>
+                                <!-- Options will be dynamically populated here -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="my-form-group my-select-focus">
+            
+                        <div class="my-form-group" >
+                            <label class="my-focus-label" style="visibility: hidden;">Search by phrase or keyword</label>
+                            <input type="text" class="my-form-control floating" id="searchPhrase" placeholder="Search a phrase" style="color: rgb(27, 32, 34); font-family: Arial, Helvetica, sans-serif;">
+
+                        </div>
+            
+                    </div>
+                </div>
+            
+                <div class="my-row">
+                    <div class="my-col-large">
+                        <div class="my-card member-panel">
+                            <div class="text-center">
+                                <span style="color: rgb(24, 74, 110); font-family: Arial, Helvetica, sans-serif; font-weight: 600; font-size: 15px;">Paragraphs</span>
+                            </div>
+                            <div class="my-card-body">
+                                <ul class="my-paragraph-list">
+                                    <!-- Paragraphs will be loaded here -->
+                                </ul>
+                            </div>
+                            <div class="my-card-footer text-center">
+                                <input type="button" id="addToContextBtn" value="Add to context" style="background-color: rgb(106, 141, 165); color: #fff; cursor: pointer;"/>
+                            </div>
+                        </div>
+                    </div>
+                 
+            
+                    <div class="my-col-medium">
+                        <div class="my-context-card member-panel">
+                            <div class="text-center" style="margin-top: 10px;">
+                                <span style="color: rgb(24, 74, 110); font-family: Arial, Helvetica, sans-serif; font-weight: 600; font-size: 15px;">Context View</span>
+                            </div>
+                            <div class="my-context-card-body">
+                                <ul class="my-context-list" id="contextList">
+                                    <!-- Contexts will be loaded here -->
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="my-row">
+                    <div class="my-col-zero">
+                        <div class="my-text-center">
+                            <button class="my-btn my-btn-primary">Generate new answer</button>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="my-row my-filter-row">
+                    
+                    <div class="my-col-textarea my-col-textarea-new-answer">
+                        <div class="my-form-group">
+                            <textarea id="newanswerBox" rows="6" class="my-form-control" placeholder="Generated Answer"></textarea>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="my-col-zero">
+                    <a href="" id="update" class="my-btn my-btn-primary" onclick="event.preventDefault();">Update answer</a>
+               
+                    <a href="" id="save" class="my-btn my-btn-primary" onclick="event.preventDefault();">Save new answer</a>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    </div>
+    <div class="sidebar-overlay" data-reff=""></div>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="lib/script.js"></script>
+    <script>src="lib/layout.js"</script>
+    
+   
+</body>
+
+
+<!-- employees23:22-->
+
+</html>

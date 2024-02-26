@@ -1,0 +1,127 @@
+[
+    {
+        "id":1,
+        "fullName":"Irene Mendulo",
+        "post":"Nurse",
+        "qualification":"BSC in Nursing and Midwifery",
+        "age":25,
+        "nationality":"Malawian",
+        "salary":300000.00,
+        "contractTerm":"5 Years",
+        "email":"os@mail.com",
+        "phone":"0884800777",
+        "address":"Ginnery,Blantyre",
+        "experience":"6 years",
+        "gender":"Female"
+    },
+    {
+        "id":2,
+        "fullName":"Memory Subaili",
+        "post":"Nurse",
+        "qualification":"BSC in Nursing and Midwifery",
+        "age":25,
+        "nationality":"Malawian",
+        "salary":300000.00,
+        "contractTerm":"3 Years",
+        "email":"os@mail.com",
+        "phone":"0884800777",
+        "address":"Ginnery,Blantyre",
+        "experience":"6 years",
+        "gender":"Female"
+    },
+    {
+        "id":3,
+        "fullName":"Jane Phiri",
+        "post":"Nurse",
+        "qualification":"Diploma in Nursing and Midwifery",
+        "age":35,
+        "nationality":"Malawian",
+        "salary":300000.00,
+        "contractTerm":"4 Years",
+        "email":"os@mail.com",
+        "phone":"0884800777",
+        "address":"Ginnery,Blantyre",
+        "experience":"6 years",
+        "gender":"Female"
+    },
+    {
+        "id":4,
+        "fullName":"John Nolha",
+        "post":"Messenger",
+        "qualification":"MSCE",
+        "age":40,
+        "nationality":"Malawian",
+        "salary":100000.00,
+        "contractTerm":"2 Years",
+        "email":"os@mail.com",
+        "phone":"0884800777",
+        "address":"Ginnery,Blantyre",
+        "experience":"6 years",
+        "gender":"Female"
+    },
+    {
+        "id":5,
+        "fullName":"Dr Oswald Mlenga",
+        "post":"Doctor",
+        "qualification":"MBBSS",
+        "age":40,
+        "nationality":"Malawian",
+        "salary":600000.00,
+        "contractTerm":"3 Years",
+        "email":"os@mail.com",
+        "phone":"0884800777",
+        "address":"Ginnery,Blantyre",
+        "experience":"6 years",
+        "gender":"Female"
+    },
+    {
+        "id":6,
+        "fullName":"Dr Ritchie Osbourne",
+        "post":"Doctor",
+        "qualification":"MBBSS",
+        "age":45,
+        "nationality":"Canada",
+        "salary":1000000.00,
+        "contractTerm":"5 Years",
+        "email":"os@mail.com",
+        "phone":"0884800777",
+        "address":"Ginnery,Blantyre",
+        "experience":"6 years",
+        "gender":"Female"
+    },
+    {
+        "id":7,
+        "fullName":"Dr Vincent Lwazi",
+        "post":"Psychiatrist",
+        "qualification":"PhD in Psychology",
+        "age":40,
+        "nationality":"South African",
+        "salary":1000000.00,
+        "contractTerm":"2 Years",
+        "email":"os@mail.com",
+        "phone":"0884800777",
+        "address":"Ginnery,Blantyre",
+        "experience":"6 years",
+        "gender":"Female"
+    },
+    {
+        "id":8,
+        "fullName":"Dr Lucy Khan",
+        "post":"Doctor",
+        "qualification":"MBBS",
+        "age":32,
+        "nationality":"Koeran",
+        "salary":300000.00,
+        "contractTerm":"5 Years",
+        "email":"os@mail.com",
+        "phone":"0884800777",
+        "address":"Ginnery,Blantyre",
+        "experience":"6 years",
+        "gender":"Female"
+    }
+]
+
+
+
+
+

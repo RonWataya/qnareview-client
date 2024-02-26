@@ -1,0 +1,37 @@
+[
+    {
+        "id":1,
+        "name":"Cardiology",
+        "staff":7
+    },
+    {
+        "id":2,
+        "name":"Orthopedic",
+        "staff":6
+    },
+    {
+        "id":3,
+        "name":"Paediatric",
+        "staff":8
+    },
+    {
+        "id":4,
+        "name":"Laboratory",
+        "staff":5
+    },
+    {
+        "id":5,
+        "name":"Pharmacy",
+        "staff":8
+    },
+    {
+        "id":6,
+        "name":"Radiology",
+        "staff":6
+    },
+    {
+        "id":7,
+        "name":"General",
+        "staff":20
+    }
+]
