@@ -35,14 +35,6 @@
             <a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
             <a id="mobile_btn" class="mobile_btn float-left" href="#sidebar"><i class="fa fa-bars"></i></a>
 
-            <div class="dropdown mobile-user-menu float-right">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i
-                        class="fa fa-ellipsis-v"></i></a>
-                <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="settings.html">Settings</a>
-                    <a class="dropdown-item" href="login.html">Logout</a>
-                </div>
-            </div>
         </div>
         <div class="sidebar" id="sidebar">
             <div class="sidebar-inner slimscroll">
@@ -55,10 +47,6 @@
                         <li>
                             <a href="#"><i class="fa fa-dashboard"></i> <span>Section 2</span></a>
                         </li>
-
-
-
-
                     </ul>
                     </li>
                     </ul>
@@ -85,12 +73,34 @@
                     
                     <div class="my-col-textarea my-col-textarea-answer">
                         <div class="my-form-group">
-                            <textarea id="answerBox" rows="6" class="my-form-control" placeholder="Answer"></textarea>
+                            <textarea id="answerBox" rows="6" class="my-form-control" placeholder="Answer"></textarea> 
+                            <div style="margin-top: -13px;">
+                                <input type="button" id="clearAnswer" value="Clear text" style="background-color: rgb(106, 141, 165); color: #fff; cursor: pointer;"/>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="my-col">
+                        <a href="" id="loadContextBtn" class="my-load-btn my-btn-primary disabled-link">Load Context</a>
+                    </div>
+                </div>
+                <div class="my-row">
+                    <div class="my-col-medium">
+                        <div class="my-context-card member-panel">
+                            <div class="text-center" style="margin-top: 10px;">
+                                <span style="color: rgb(24, 74, 110); font-family: Arial, Helvetica, sans-serif; font-weight: 600; font-size: 15px;">Context View</span>
+                            </div>
+                            <div class="my-context-card-body">
+                                <ul class="my-context-list" id="contextList">
+                                    <!-- Contexts will be loaded here -->
+                                </ul>
+                            </div>
+                            
                         </div>
                     </div>
-                    <div class="my-col">
-                        <a href="#" id="loadContextBtn" class="my-load-btn my-btn-primary">Load Context</a>
-                    </div>
+                   
+                 
                 </div>
                 <div class="my-row my-filter-row">
                     <div class="my-col">
@@ -115,6 +125,7 @@
                 </div>
             
                 <div class="my-row">
+                   
                     <div class="my-col-large">
                         <div class="my-card member-panel">
                             <div class="text-center">
@@ -131,20 +142,6 @@
                         </div>
                     </div>
                  
-            
-                    <div class="my-col-medium">
-                        <div class="my-context-card member-panel">
-                            <div class="text-center" style="margin-top: 10px;">
-                                <span style="color: rgb(24, 74, 110); font-family: Arial, Helvetica, sans-serif; font-weight: 600; font-size: 15px;">Context View</span>
-                            </div>
-                            <div class="my-context-card-body">
-                                <ul class="my-context-list" id="contextList">
-                                    <!-- Contexts will be loaded here -->
-                                </ul>
-                            </div>
-                            
-                        </div>
-                    </div>
                 </div>
                 <div class="my-row">
                     <div class="my-col-zero">

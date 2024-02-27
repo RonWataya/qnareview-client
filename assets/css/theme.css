@@ -266,6 +266,32 @@ input[type='checkbox'].mr-10:after {
 .selected {
     background-color: #ffdddd; /* Light red background */
 }
+.disabled-link {
+    pointer-events: none;
+    color: grey; /* Change as needed */
+    text-decoration: none;
+}
+.my-context-list .context-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.my-context-list .context-item .paragraph-preview {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    top: 100%;
+    left: 0;
+}
+
+.my-context-list .context-item:hover .paragraph-preview {
+    display: block;
+}
 
 /* Responsive Design Adjustments */
 @media (max-width: 768px) {
