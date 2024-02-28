@@ -190,12 +190,14 @@ input[type='checkbox'].mr-10 {
     appearance: none;
 
     /* Custom checkbox appearance */
-    width: 20px; /* Custom width */
+    width: 10px; /* Custom width */
     height: 20px; /* Custom height */
     background-color: white; /* Background color */
     border: 2px solid #555; /* Border */
     position: relative; /* For positioning the "X" */
     display: inline-block; /* To display it inline */
+    margin-left: 60px;
+    padding-left: 20px;
    
 }
 
@@ -275,23 +277,24 @@ input[type='checkbox'].mr-10:after {
     position: relative;
     cursor: pointer;
 }
-
-.my-context-list .context-item .paragraph-preview {
-    display: none;
-    position: absolute;
-    z-index: 100;
-    width: 100%;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    top: 100%;
-    left: 0;
+.view-paragraph:hover + .paragraph-text {
+    display: inline; /* Show paragraph text on hover */
 }
 
-.my-context-list .context-item:hover .paragraph-preview {
-    display: block;
+.paragraph-text {
+    display: none; /* Hide paragraph text initially */
+    font-style: italic;
+    margin-left: 5px; /* Optional: for better spacing */
 }
+
+.view-paragraph {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    margin-left: 5px; /* Optional: for better spacing */
+}
+
+
 
 /* Responsive Design Adjustments */
 @media (max-width: 768px) {
