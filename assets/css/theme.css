@@ -294,6 +294,15 @@ input[type='checkbox'].mr-10:after {
     margin-left: 5px; /* Optional: for better spacing */
 }
 
+#typingNotification {
+    display: none; /* Hidden by default */
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 8px; /* Adjust based on your layout */
+}
+
+
 
 
 /* Responsive Design Adjustments */
